@@ -1,0 +1,119 @@
+doctype html
+html(lang="en")
+  head 
+    meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+    style
+      include ../master/style.css 
+  body 
+    div.container
+      nav.navbar
+        ul 
+          li.logo QR
+          li.signals #[img(src="../master/signal.png", alt="signal", class="signal")] 
+          span 250 Ms 
+          li.money #[img(src="../master/money1.png", alt="money1", class="money1")] 
+          span IDR 9.242.250
+          li.arrows #[img(src="../master/arrow.svg", alt="arrow", class="arrow")]
+          li.menu  #[a(href="#") #[img(src="../master/menu.svg", alt="hm1", class="hm1")]]
+      div.dots 
+        div.dots1
+        div.dots2
+        div.dots3
+      div.box 
+        .column1 
+          li.row1 00-75
+          li 75s
+          li R718
+          li
+            select(name="table")
+              option(value="table 2")  table 2    
+        div.card-master
+          -var numb = 1
+          each val in [1, 2, 3, 4]
+            each val2 in [1, 2, 3, 4, 5,6]
+             div.card= numb++
+          div.detail 
+            -var numb = ''
+            div.table-contain 
+              table(border="1" class="bordered" style="width:250px;background-color:white;")
+                thead
+                  each val in [1, 2, 3, 4, 5, 6]
+                    tr( style="height:35px;")
+                      each val in [1, 2, 3, 4, 5,6, 7, 8]
+                        th  
+            div.circle-table 
+              span.circle1 
+                span.one 9
+              span.circle2
+                span.two 3
+              span.circle3 
+                span.three 3
+              span.circle4
+                span.four 2
+              span.circle5
+                span.five 10
+            div.data
+              .data1 
+                div.big 
+                  span.text-big Big (7-12) <br/>
+                    span.banding 1:1
+                div.small 
+                  span.text-small Small (1-6) <br/>
+                    span.banding 1:2
+              .data2
+                div.odd 
+                  span.text-odd Odd <br/>
+                    span.banding2 1:2
+                div.even 
+                  span.text-even Even <br/>
+                    span.banding2 1:2
+              .data3
+                div.black 
+                  span.text-black Black <br/>
+                    span.banding2 1:2
+                div.red 
+                  span.text-red Red <br/>
+                    span.banding2 1:2
+              .data4
+                div.odd-big 
+                  span.text-odd-big Odd Big <br/>
+                    span.banding 1:4
+                div.even-big 
+                  span.text-even-big Even Big <br/>
+                    span.banding 1:4
+              .data5
+                div.odd-small 
+                  span.text-odd-small Odd Small <br/>
+                    span.banding 1:4
+                div.even-small 
+                  span.text-even-small Even Small <br/>
+                    span.banding 1:4
+          div.info 
+              span.eo 
+                span.text-eo E/O
+              span.bs
+                span.text-bs B/S
+              span.br
+                span.text-br B/R
+    div.menu2 
+      ul 
+        li.close  #[a(href="#") #[span(class="material-icons") close]]
+        li.undo  #[a(href="#") #[span(class="material-icons") undo]]
+        li.save  #[a(href="#") #[span(class="material-icons") save]]
+        li.refresh  #[a(href="#") #[span(class="material-icons") refresh]]
+        li.check  #[a(href="#") #[span(class="material-icons") check_circle_outline]]
+    div.menu-ball 
+      span.ball 
+        img(src="../master/ball.svg", alt="ball")
+        img(src="../master/navigate.svg")
+ 
+    script 
+      include ../master/script.js 
+
+          
+      
+
+
+

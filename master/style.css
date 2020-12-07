@@ -1,0 +1,479 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(8, 8, 61);
+  min-height: 150vh;
+}
+
+@media  (min-width:418px) {
+  .navbar {
+    background-color: rgba(13, 13, 121, 0.938);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 100px;
+    width: 30px;
+    height: 10px;
+    background-color: rgb(30, 139, 241);
+    color: white;
+    font-size: 24px;
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+  .navbar ul {
+    display: flex;
+    align-items: center;
+  }
+  .navbar ul span {
+    font-size: 10px;
+    margin-left: -5px;
+    color: white;
+  }
+  .navbar ul li {
+    padding: 10px 10px;
+    list-style: none;
+  }
+  .arrow, .signal, .money1, .hm1 {
+    width: 30px;
+  }
+  .dots {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    top: 50px;
+  }
+  .dots1 {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 2px;
+  }
+  .dots2 {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 2px;
+    background-color: rgb(47, 138, 241);
+  }
+  .dots3 {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .box {
+    position: relative;
+    top: 50px;
+    margin: 10px;
+    background-color: rgb(28, 50, 148);
+    border-radius: 5px;
+  }
+  .column1 {
+    display: flex;
+    list-style: none;
+    padding-top: 10px;
+    color: white;
+  }
+  .row1 {
+    margin-left: 20px;
+    margin-right: 100px;
+    font-size: 24px;
+  }
+  .column1 li {
+    padding: 10px 20px;
+    line-height: 10px;
+    font-weight: bold;
+  }
+  li select {
+    margin-top: -10px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: turquoise;
+    cursor: pointer;
+  }
+  .card-master {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 3px;
+  }
+  .card {
+    width: 72px;
+    height: 100px;
+    background-color: turquoise;
+    margin: 2px;
+    border-radius: 9px;
+  }
+  .menu2 {
+    background-color: rgba(13, 13, 121, 0.938);
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .menu2 ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px;
+  }
+  .menu2 ul li {
+    padding: 5px 10px;
+    list-style: none;
+  }
+  .menu2 ul li a {
+    text-decoration: none;
+
+  }
+  li.close, li.undo {
+    width: 60px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+  }
+  li.close a, li.undo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 15px;
+  }
+  li.save {
+    width: 60px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(185, 202, 33);
+  }
+  li.save a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(185, 202, 33);
+    width: 16px;
+    height: 20px;
+    margin-left: 20px;
+    overflow: hidden;
+  }
+  li.refresh {
+    width: 60px;
+    border-radius: 10px;
+    background-color: rgb(0, 89, 255);
+    border: 1px solid white;
+  }
+  li.refresh a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 15px;
+  }
+  li.check {
+    width: 60px;
+    border-radius: 10px;
+    background-color: rgb(0, 255, 115);
+    border: 1px solid white;
+  }
+  li.check a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  span.numb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: Verdana,sans-serif;
+  }
+  .detail {
+    display: flex;
+    padding: 10px 3px;
+    width: 600px;
+    position: relative;
+  }
+  table {
+    width: 20px;
+  }
+  .circle-table {
+    color: white;
+    font-size: 12px;
+  }
+  .circle1, .circle2, .circle3 {
+    background-color: red;
+    width: 15px;
+    height:  15px;
+    border-radius: 100%;
+    padding: 2px;
+  }
+  .circle4, .circle5 {
+    background-color: black;
+    width: 15px;
+    height:  15px;
+    border-radius: 100%;
+    padding: 2px;
+  }
+  .circle1 {
+    left:11px;
+    top: 22px;
+    position: absolute;
+  }
+  .circle2 {
+    left:11px;
+    top: 58px;
+    position: absolute;
+  }
+  .circle3 {
+    left:11px;
+    top: 95px;
+    position: absolute;
+  }
+  .circle4 {
+    left:41px;
+    top: 22px;
+    position: absolute;
+  }
+  .circle5 {
+    left:41px;
+    top: 58px;
+    position: absolute;
+  }
+  .one, .two, .three , .four, .five{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .data1 {
+    display: flex;
+    margin-bottom: 50px;
+    color: white;
+  }
+  .text-big {
+    margin-left: 17px;
+  }
+  .text-small {
+    margin-left: 10px;
+  }
+  .banding {
+    margin-left: 35px;
+  }
+  .big {
+    background-color: blueviolet;
+    width: 100px;
+    padding: 5px 0;
+    margin-bottom: -40px;
+    margin-right: 2px;
+    margin-left: 2px;
+    border-radius: 10px;
+  }
+  .small {
+    background-color: rgb(226, 36, 201);
+    width: 100px;
+    padding: 5px 0;
+    margin-bottom: -40px;
+    border-radius: 10px;
+  }
+  .data2 {
+    display: flex;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+  }
+  .text-odd {
+    margin-left: 35px;
+  }
+  .banding2 {
+    margin-left: 40px;
+  }
+  .odd {
+    background-color: aqua;
+    width: 100px;
+    padding: 5px 0;
+    margin-right: 2px;
+    margin-left: 2px;
+    border-radius: 10px;
+  }
+  .text-even {
+    margin-left: 35px;
+  }
+  .banding2 {
+    margin-left: 40px;
+  }
+  .even {
+    background-color: rgb(13, 70, 7);
+    width: 100px;
+    padding: 5px 0;
+    border-radius: 10px;
+  }
+  .data3 {
+    display: flex;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+  }
+  .text-black {
+    margin-left: 32px;
+  }
+  .banding2 {
+    margin-left: 40px;
+  }
+  .black {
+    background-color:black;
+    width: 100px;
+    padding: 5px 0;
+    margin-right: 2px;
+    margin-left: 2px;
+    border-radius: 10px;
+  }
+  .text-red {
+    margin-left: 35px;
+  }
+  .banding2 {
+    margin-left: 40px;
+  }
+  .red {
+    background-color:red;
+    width: 100px;
+    padding: 5px 0;
+    border-radius: 10px;
+  }
+  .data4 {
+    display: flex;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+  }
+  .text-odd-big {
+    margin-left: 20px;
+  }
+  .banding {
+    margin-left: 40px;
+  }
+  .odd-big {
+    background-color:rgb(139, 80, 31);
+    padding: 5px 0;
+    width: 100px;
+    margin-right: 2px;
+    margin-left: 2px;
+    border-radius: 10px;
+  }
+  .text-even-big {
+    margin-left: 20px;
+  }
+  .banding {
+    margin-left: 40px;
+  }
+  .even-big {
+    background-color:rgb(214, 83, 247);
+    width: 100px;
+    border-radius: 10px;
+  }
+  .data5 {
+    display: flex;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+  }
+  .text-odd-small {
+    margin-left: 13px;
+  }
+  .banding {
+    margin-left: 40px;
+  }
+  .odd-small {
+    background-color:rgb(252, 161, 44);
+    width: 100px;
+    padding: 5px 0;
+    margin-right: 2px;
+    margin-left: 2px;
+    border-radius: 10px;
+  }
+  .text-even-small {
+    margin-left: 10px;
+  }
+  .banding {
+    margin-left: 40px;
+  }
+  .even-small {
+    background-color:rgb(11, 170, 72);
+    width: 100px;
+    padding: 5px 0;
+    border-radius: 10px;
+  }
+  .info {
+    display: flex;
+    padding: 5px;
+    font-weight: bold;
+    margin-top: -80px;
+  }
+  .eo {
+    bottom: 190px;
+    width: 70px;
+    background-color: aqua;
+    padding: 5px 5px;
+    border-radius: 10px;
+    margin-right: 3px;
+    color: black;
+  }
+  .text-eo, .text-bs, .text-br {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bs {
+    color: white;
+    border: 1px solid aqua;
+    bottom: 190px;
+    width: 70px;
+    background-color: rgb(4, 29, 46);
+    padding: 5px 5px;
+    border-radius: 10px;
+    margin-right: 3px;
+  }
+  .br {
+    bottom: 190px;
+    width: 70px;
+    background-color: rgb(4, 29, 46);
+    padding: 5px 5px;
+    border-radius: 10px;
+    margin-right: 3px;
+    color: white;
+  }
+  .ball {
+    position: fixed;
+    width: 60px;
+    background-color: rgb(97, 104, 110);    
+    bottom: 200px;
+    padding: 7px 7px;
+    opacity: .8;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .ball img {
+    width: 30px;
+  }
+
+}
